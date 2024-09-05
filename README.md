@@ -112,13 +112,13 @@
     ![](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V2.svg)
   * 简介：DeepSeek-V2：强大、经济、高效的专家混合语言模型
 * Baichuan-7B
-  * 地址：https://github.com/baichuan-inc/baichuan-7B
+  * 地址：https://github.com/baichuan-inc/Baichuan-7B
     ![](https://img.shields.io/github/stars/baichuan-inc/baichuan-7B.svg)
-  * 简介：Baichuan-13B 是由百川智能继 Baichuan-7B 之后开发的包含 130 亿参数的开源可商用的大规模语言模型，在权威的中文和英文 benchmark 上均取得同尺寸最好的效果。该项目发布包含有预训练 (Baichuan-13B-Base) 和对齐 (Baichuan-13B-Chat) 两个版本。
-* Baichuan-13B
-  * 地址：https://github.com/baichuan-inc/Baichuan-13B
-    ![](https://img.shields.io/github/stars/baichuan-inc/baichuan-13B.svg)
   * 简介：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
+* Baichuan-13B
+  * 地址：https://github.com/baichuan-inc/baichuan-13B
+    ![](https://img.shields.io/github/stars/baichuan-inc/baichuan-13B.svg)
+  * 简介：Baichuan-13B 是由百川智能继 Baichuan-7B 之后开发的包含 130 亿参数的开源可商用的大规模语言模型，在权威的中文和英文 benchmark 上均取得同尺寸最好的效果。该项目发布包含有预训练 (Baichuan-13B-Base) 和对齐 (Baichuan-13B-Chat) 两个版本。
 * Baichuan2
   * 地址：https://github.com/baichuan-inc/Baichuan2
     ![](https://img.shields.io/github/stars/baichuan-inc/Baichuan2.svg)
