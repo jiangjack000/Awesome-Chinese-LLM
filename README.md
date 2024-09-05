@@ -30,13 +30,13 @@
 常见底座模型细节概览：
 | 底座     | 包含模型                    | 模型参数大小      | 训练token数  | 训练最大长度 | 是否可商用 |
 |----------|---------------------------|-----------------|-------------|------------|-------   |
-| ChatGLM  | ChatGLM/2/3 Base&Chat     | 6B              | 1T/1.4      | 2K/32K     | 可商用   |
+| ChatGLM  | ChatGLM/2/3/4 Base&Chat   | 6B              | 1T/1.4      | 2K/32K     | 可商用   |
 | LLaMA    | LLaMA/2/3 Base&Chat       | 7B/8B/13B/33B/70B | 1T/2T       | 2k/4k      | 部分可商用  |
 | Baichuan | Baichuan/2 Base&Chat      | 7B/13B          | 1.2T/1.4T | 4k     | 可商用   |
-| Qwen     | Qwen/1.5 Base&Chat        | 7B/14B/72B/110B | 2.2T/3T      | 8k/32k     | 可商用   |
+| Qwen     | Qwen/1.5/2 Base&Chat&VL   | 7B/14B/72B/110B | 2.2T/3T      | 8k/32k     | 可商用   |
 | BLOOM    | BLOOM                     | 1B/7B/176B-MT   | 1.5T      | 2k     | 可商用   |
 | Aquila   | Aquila/2 Base/Chat        | 7B/34B          | -         | 2k     | 可商用   |
-| InternLM | InternLM/2 Base/Chat/Code | 7B/20B          | -         | 200k | 可商用 |
+| InternLM | InternLM/2/2.5 Base/Chat/VL   | 7B/20B          | -         | 200k | 可商用 |
 | Mixtral  | Base&Chat                 | 8x7B            | -         | 32k | 可商用 |
 | Yi       | Base&Chat                 | 6B/9B/34B       | 3T        | 200k | 可商用 |
 | DeepSeek | Base&Chat                 | 1.3B/7B/33B/67B | -         | 4k | 可商用 |
@@ -95,6 +95,58 @@
   * 地址：https://github.com/THUDM/GLM-4
     ![](https://img.shields.io/github/stars/THUDM/GLM-4.svg)
   * 简介：GLM-4-9B 是智谱 AI 推出的最新一代预训练模型 GLM-4 系列中的开源版本。 在语义、数学、推理、代码和知识等多方面的数据集测评中， **GLM-4-9B** 及其人类偏好对齐的版本 **GLM-4-9B-Chat** 均表现出超越 Llama-3-8B 的卓越性能。除了能进行多轮对话，GLM-4-9B-Chat 还具备网页浏览、代码执行、自定义工具调用（Function Call）和长文本推理（支持最大 128K 上下文）等高级功能。本代模型增加了多语言支持，支持包括日语，韩语，德语在内的 26 种语言。我们还推出了支持 1M 上下文长度（约 200 万中文字符）的 **GLM-4-9B-Chat-1M** 模型和基于 GLM-4-9B 的多模态模型 GLM-4V-9B。**GLM-4V-9B** 具备 1120 * 1120 高分辨率下的中英双语多轮对话能力，在中英文综合能力、感知推理、文字识别、图表理解等多方面多模态评测中，GLM-4V-9B 表现出超越 GPT-4-turbo-2024-04-09、Gemini 1.0 Pro、Qwen-VL-Max 和 Claude 3 Opus 的卓越性能。
+* Qwen/Qwen1.5/Qwen2
+  * 地址：https://github.com/QwenLM
+    ![](https://img.shields.io/github/stars/QwenLM/Qwen.svg)
+  * 简介：通义千问 是阿里云研发的通义千问大模型系列模型，包括参数规模为18亿（1.8B）、70亿（7B）、140亿（14B）、720亿（72B）和1100亿（110B）。各个规模的模型包括基础模型Qwen，以及对话模型。数据集包括文本和代码等多种数据类型，覆盖通用领域和专业领域，能支持8~32K的上下文长度，针对插件调用相关的对齐数据做了特定优化，当前模型能有效调用插件以及升级为Agent。
+* InternLM
+  * 地址：https://github.com/InternLM/InternLM-techreport
+    ![](https://img.shields.io/github/stars/InternLM/InternLM-techreport.svg)
+  * 简介：商汤科技、上海AI实验室联合香港中文大学、复旦大学和上海交通大学发布千亿级参数大语言模型“书生·浦语”（InternLM）。据悉，“书生·浦语”具有1040亿参数，基于“包含1.6万亿token的多语种高质量数据集”训练而成。
+* InternLM2
+  * 地址：https://github.com/InternLM/InternLM
+      ![](https://img.shields.io/github/stars/InternLM/InternLM.svg)
+  * 简介：商汤科技、上海AI实验室联合香港中文大学、复旦大学和上海交通大学发布千亿级参数大语言模型“书生·浦语”（InternLM2）。InternLM2 在数理、代码、对话、创作等各方面能力都获得了长足进步，综合性能达到开源模型的领先水平。InternLM2 包含两种模型规格：7B 和 20B。7B 为轻量级的研究和应用提供了一个轻便但性能不俗的模型，20B 模型的综合性能更为强劲，可以有效支持更加复杂的实用场景。
+* DeepSeek-V2
+  * 地址：https://github.com/deepseek-ai/DeepSeek-V2
+    ![](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V2.svg)
+  * 简介：DeepSeek-V2：强大、经济、高效的专家混合语言模型
+* Baichuan-7B
+  * 地址：https://github.com/baichuan-inc/baichuan-7B
+    ![](https://img.shields.io/github/stars/baichuan-inc/baichuan-7B.svg)
+  * 简介：Baichuan-13B 是由百川智能继 Baichuan-7B 之后开发的包含 130 亿参数的开源可商用的大规模语言模型，在权威的中文和英文 benchmark 上均取得同尺寸最好的效果。该项目发布包含有预训练 (Baichuan-13B-Base) 和对齐 (Baichuan-13B-Chat) 两个版本。
+* Baichuan-13B
+  * 地址：https://github.com/baichuan-inc/Baichuan-13B
+    ![](https://img.shields.io/github/stars/baichuan-inc/baichuan-13B.svg)
+  * 简介：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
+* Baichuan2
+  * 地址：https://github.com/baichuan-inc/Baichuan2
+    ![](https://img.shields.io/github/stars/baichuan-inc/Baichuan2.svg)
+  * 简介：由百川智能推出的新一代开源大语言模型，采用 2.6 万亿 Tokens 的高质量语料训练，在多个权威的中文、英文和多语言的通用、领域 benchmark上取得同尺寸最佳的效果，发布包含有7B、13B的Base和经过PPO训练的Chat版本，并提供了Chat版本的4bits量化。
+* XVERSE-7B
+  * 地址：https://github.com/xverse-ai/XVERSE-7B
+    ![](https://img.shields.io/github/stars/xverse-ai/XVERSE-7B.svg)
+  * 简介：由深圳元象科技自主研发的支持多语言的大语言模型，支持 8K 的上下文长度（Context Length），使用 2.6 万亿 token 的高质量、多样化的数据对模型进行充分训练，支持中、英、俄、西等 40 多种语言。并包含GGUF、GPTQ量化版本的模型，支持在llama.cpp、vLLM在MacOS/Linux/Windows系统上推理。
+* XVERSE-13B
+  * 地址：https://github.com/xverse-ai/XVERSE-13B
+    ![](https://img.shields.io/github/stars/xverse-ai/XVERSE-13B.svg)
+  * 简介：由深圳元象科技自主研发的支持多语言的大语言模型，支持 8K 的上下文长度（Context Length），使用 3.2 万亿 token 的高质量、多样化的数据对模型进行充分训练，支持中、英、俄、西等 40 多种语言。包含长序列对话模型 XVERSE-13B-256K ，该版本模型最大支持 256K 的上下文窗口长度，约 25w 字的输入内容，可以协助进行文献总结、报告分析等任务。并包含GGUF、GPTQ量化版本的模型，支持在llama.cpp、vLLM在MacOS/Linux/Windows系统上推理。
+* XVERSE-65B
+  * 地址：https://github.com/xverse-ai/XVERSE-65B
+    ![](https://img.shields.io/github/stars/xverse-ai/XVERSE-65B.svg)
+  * 简介：由深圳元象科技自主研发的支持多语言的大语言模型，支持 16K 的上下文长度（Context Length），使用 2.6 万亿 token 的高质量、多样化的数据对模型进行充分训练，支持中、英、俄、西等 40 多种语言。包含增量预训练到 3.2 万亿 token 的 XVERSE-65B-2 模型。并包含GGUF、GPTQ量化版本的模型，支持在llama.cpp、vLLM在MacOS/Linux/Windows系统上推理。
+* XVERSE-MoE-A4.2B
+  * 地址：https://github.com/xverse-ai/XVERSE-MoE-A4.2B
+    ![](https://img.shields.io/github/stars/xverse-ai/XVERSE-MoE-A4.2B.svg)
+  * 简介：由深圳元象科技自主研发的支持多语言的大语言模型（Large Language Model），使用混合专家模型（MoE，Mixture-of-experts）架构，模型的总参数规模为 258 亿，实际激活的参数量为 42 亿，支持 8K 的上下文长度（Context Length），使用 3.2 万亿 token 的高质量、多样化的数据对模型进行充分训练，支持中、英、俄、西等 40 多种语言。
+* Skywork
+  * 地址：https://github.com/SkyworkAI/Skywork
+    ![](https://img.shields.io/github/stars/SkyworkAI/Skywork.svg)
+  * 简介：该项目开源了天工系列模型，该系列模型在3.2TB高质量多语言和代码数据上进行预训练，开源了包括模型参数，训练数据，评估数据，评估方法。具体包括Skywork-13B-Base模型、Skywork-13B-Chat模型、Skywork-13B-Math模型和Skywork-13B-MM模型，以及每个模型的量化版模型，以支持用户在消费级显卡进行部署和推理。
+* Yi
+  * 地址：https://github.com/01-ai/Yi
+    ![](https://img.shields.io/github/stars/01-ai/Yi.svg)
+  * 简介：该项目开源了Yi-6B和Yi-34B等模型，该系列模型最长可支持200K的超长上下文窗口版本，可以处理约40万汉字超长文本输入，理解超过1000页的PDF文档。
 * Chinese-LLaMA-Alpaca：
   * 地址：https://github.com/ymcui/Chinese-LLaMA-Alpaca
     ![](https://img.shields.io/github/stars/ymcui/Chinese-LLaMA-Alpaca.svg)
@@ -111,10 +163,6 @@
   * 地址：https://github.com/FlagAlpha/Llama2-Chinese
     ![](https://img.shields.io/github/stars/FlagAlpha/Llama2-Chinese.svg)
   * 简介：该项目专注于Llama2模型在中文方面的优化和上层建设，基于大规模中文数据，从预训练开始对Llama2模型进行中文能力的持续迭代升级。
-* Qwen/Qwen1.5
-  * 地址：https://github.com/QwenLM/Qwen
-    ![](https://img.shields.io/github/stars/QwenLM/Qwen.svg)
-  * 简介：通义千问 是阿里云研发的通义千问大模型系列模型，包括参数规模为18亿（1.8B）、70亿（7B）、140亿（14B）、720亿（72B）和1100亿（110B）。各个规模的模型包括基础模型Qwen，以及对话模型。数据集包括文本和代码等多种数据类型，覆盖通用领域和专业领域，能支持8K的上下文长度，针对插件调用相关的对齐数据做了特定优化，当前模型能有效调用插件以及升级为Agent。
 * OpenChineseLLaMA：
   * 地址：https://github.com/OpenLMLab/OpenChineseLLaMA
     ![](https://img.shields.io/github/stars/OpenLMLab/OpenChineseLLaMA.svg)
@@ -171,14 +219,6 @@
   * 地址：https://github.com/TigerResearch/TigerBot
     ![](https://img.shields.io/github/stars/TigerResearch/TigerBot.svg)
   * 简介：一个多语言多任务的大规模语言模型(LLM)，开源了包括模型：TigerBot-7B, TigerBot-7B-base，TigerBot-180B，基本训练和推理代码，100G预训练数据，涵盖金融、法律、百科的领域数据以及API等。
-* 书生·浦语
-  * 地址：https://github.com/InternLM/InternLM-techreport
-    ![](https://img.shields.io/github/stars/InternLM/InternLM-techreport.svg)
-  * 简介：商汤科技、上海AI实验室联合香港中文大学、复旦大学和上海交通大学发布千亿级参数大语言模型“书生·浦语”（InternLM）。据悉，“书生·浦语”具有1040亿参数，基于“包含1.6万亿token的多语种高质量数据集”训练而成。
-* 书生·浦语2
-  * 地址：https://github.com/InternLM/InternLM
-      ![](https://img.shields.io/github/stars/InternLM/InternLM.svg)
-  * 简介：商汤科技、上海AI实验室联合香港中文大学、复旦大学和上海交通大学发布千亿级参数大语言模型“书生·浦语”（InternLM2）。InternLM2 在数理、代码、对话、创作等各方面能力都获得了长足进步，综合性能达到开源模型的领先水平。InternLM2 包含两种模型规格：7B 和 20B。7B 为轻量级的研究和应用提供了一个轻便但性能不俗的模型，20B 模型的综合性能更为强劲，可以有效支持更加复杂的实用场景。
 * Aquila
   * 地址：https://github.com/FlagAI-Open/FlagAI/tree/master/examples/Aquila
     ![](https://img.shields.io/github/stars/FlagAI-Open/FlagAI.svg)
@@ -187,18 +227,6 @@
   * 地址：https://github.com/FlagAI-Open/Aquila2
     ![](https://img.shields.io/github/stars/FlagAI-Open/Aquila2.svg)
   * 简介：由智源研究院发布，Aquila2 系列，包括基础语言模型 Aquila2-7B，Aquila2-34B 和 Aquila2-70B-Expr ，对话模型 AquilaChat2-7B ，AquilaChat2-34B 和 AquilaChat2-70B-Expr，长文本对话模型AquilaChat2-7B-16k 和 AquilaChat2-34B-16。
-* Baichuan-7B
-  * 地址：https://github.com/baichuan-inc/baichuan-7B
-    ![](https://img.shields.io/github/stars/baichuan-inc/baichuan-7B.svg)
-  * 简介：Baichuan-13B 是由百川智能继 Baichuan-7B 之后开发的包含 130 亿参数的开源可商用的大规模语言模型，在权威的中文和英文 benchmark 上均取得同尺寸最好的效果。该项目发布包含有预训练 (Baichuan-13B-Base) 和对齐 (Baichuan-13B-Chat) 两个版本。
-* Baichuan-13B
-  * 地址：https://github.com/baichuan-inc/Baichuan-13B
-    ![](https://img.shields.io/github/stars/baichuan-inc/baichuan-13B.svg)
-  * 简介：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
-* Baichuan2
-  * 地址：https://github.com/baichuan-inc/Baichuan2
-    ![](https://img.shields.io/github/stars/baichuan-inc/Baichuan2.svg)
-  * 简介：由百川智能推出的新一代开源大语言模型，采用 2.6 万亿 Tokens 的高质量语料训练，在多个权威的中文、英文和多语言的通用、领域 benchmark上取得同尺寸最佳的效果，发布包含有7B、13B的Base和经过PPO训练的Chat版本，并提供了Chat版本的4bits量化。
 * Anima
   * 地址：https://github.com/lyogavin/Anima
     ![](https://img.shields.io/github/stars/lyogavin/Anima.svg)
@@ -231,30 +259,6 @@
   * 地址：https://github.com/wenge-research/YAYI2
     ![](https://img.shields.io/github/stars/wenge-research/YAYI2.svg)
   * 简介：YAYI 2 是中科闻歌研发的新一代开源大语言模型，包括 Base 和 Chat 版本，参数规模为 30B。YAYI2-30B 是基于 Transformer 的大语言模型，采用了超过 2 万亿 Tokens 的高质量、多语言语料进行预训练。针对通用和特定领域的应用场景，我们采用了百万级指令进行微调，同时借助人类反馈强化学习方法，以更好地使模型与人类价值观对齐。本次开源的模型为 YAYI2-30B Base 模型。
-* XVERSE-7B
-  * 地址：https://github.com/xverse-ai/XVERSE-7B
-    ![](https://img.shields.io/github/stars/xverse-ai/XVERSE-7B.svg)
-  * 简介：由深圳元象科技自主研发的支持多语言的大语言模型，支持 8K 的上下文长度（Context Length），使用 2.6 万亿 token 的高质量、多样化的数据对模型进行充分训练，支持中、英、俄、西等 40 多种语言。并包含GGUF、GPTQ量化版本的模型，支持在llama.cpp、vLLM在MacOS/Linux/Windows系统上推理。
-* XVERSE-13B
-  * 地址：https://github.com/xverse-ai/XVERSE-13B
-    ![](https://img.shields.io/github/stars/xverse-ai/XVERSE-13B.svg)
-  * 简介：由深圳元象科技自主研发的支持多语言的大语言模型，支持 8K 的上下文长度（Context Length），使用 3.2 万亿 token 的高质量、多样化的数据对模型进行充分训练，支持中、英、俄、西等 40 多种语言。包含长序列对话模型 XVERSE-13B-256K ，该版本模型最大支持 256K 的上下文窗口长度，约 25w 字的输入内容，可以协助进行文献总结、报告分析等任务。并包含GGUF、GPTQ量化版本的模型，支持在llama.cpp、vLLM在MacOS/Linux/Windows系统上推理。
-* XVERSE-65B
-  * 地址：https://github.com/xverse-ai/XVERSE-65B
-    ![](https://img.shields.io/github/stars/xverse-ai/XVERSE-65B.svg)
-  * 简介：由深圳元象科技自主研发的支持多语言的大语言模型，支持 16K 的上下文长度（Context Length），使用 2.6 万亿 token 的高质量、多样化的数据对模型进行充分训练，支持中、英、俄、西等 40 多种语言。包含增量预训练到 3.2 万亿 token 的 XVERSE-65B-2 模型。并包含GGUF、GPTQ量化版本的模型，支持在llama.cpp、vLLM在MacOS/Linux/Windows系统上推理。
-* XVERSE-MoE-A4.2B
-  * 地址：https://github.com/xverse-ai/XVERSE-MoE-A4.2B
-    ![](https://img.shields.io/github/stars/xverse-ai/XVERSE-MoE-A4.2B.svg)
-  * 简介：由深圳元象科技自主研发的支持多语言的大语言模型（Large Language Model），使用混合专家模型（MoE，Mixture-of-experts）架构，模型的总参数规模为 258 亿，实际激活的参数量为 42 亿，支持 8K 的上下文长度（Context Length），使用 3.2 万亿 token 的高质量、多样化的数据对模型进行充分训练，支持中、英、俄、西等 40 多种语言。
-* Skywork
-  * 地址：https://github.com/SkyworkAI/Skywork
-    ![](https://img.shields.io/github/stars/SkyworkAI/Skywork.svg)
-  * 简介：该项目开源了天工系列模型，该系列模型在3.2TB高质量多语言和代码数据上进行预训练，开源了包括模型参数，训练数据，评估数据，评估方法。具体包括Skywork-13B-Base模型、Skywork-13B-Chat模型、Skywork-13B-Math模型和Skywork-13B-MM模型，以及每个模型的量化版模型，以支持用户在消费级显卡进行部署和推理。
-* Yi
-  * 地址：https://github.com/01-ai/Yi
-    ![](https://img.shields.io/github/stars/01-ai/Yi.svg)
-  * 简介：该项目开源了Yi-6B和Yi-34B等模型，该系列模型最长可支持200K的超长上下文窗口版本，可以处理约40万汉字超长文本输入，理解超过1000页的PDF文档。
 * Yuan-2.0
   * 地址：https://github.com/IEIT-Yuan/Yuan-2.0
     ![](https://img.shields.io/github/stars/IEIT-Yuan/Yuan-2.0.svg)
@@ -287,10 +291,6 @@
   * 地址：https://github.com/Langboat/Mengzi3
     ![](https://img.shields.io/github/stars/Langboat/Mengzi3.svg)
   * 简介：Mengzi3 8B/13B模型基于Llama架构，语料精选自网页、百科、社交、媒体、新闻，以及高质量的开源数据集。通过在万亿tokens上进行多语言语料的继续训练，模型的中文能力突出并且兼顾多语言能力。
-* DeepSeek-V2
-  * 地址：https://github.com/deepseek-ai/DeepSeek-V2
-    ![](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V2.svg)
-  * 简介：DeepSeek-V2：强大、经济、高效的专家混合语言模型
 
 #### 1.2 多模态LLM模型
 
@@ -329,6 +329,11 @@
   * 地址：https://github.com/QwenLM/Qwen-VL
     ![](https://img.shields.io/github/stars/QwenLM/Qwen-VL.svg)
   * 简介：是阿里云研发的大规模视觉语言模型，可以以图像、文本、检测框作为输入，并以文本和检测框作为输出。特点包括：强大的性能：在四大类多模态任务的标准英文测评中上均取得同等通用模型大小下最好效果；多语言对话模型：天然支持英文、中文等多语言对话，端到端支持图片里中英双语的长文本识别；多图交错对话：支持多图输入和比较，指定图片问答，多图文学创作等；首个支持中文开放域定位的通用模型：通过中文开放域语言表达进行检测框标注；细粒度识别和理解：相比于目前其它开源LVLM使用的224分辨率，Qwen-VL是首个开源的448分辨率的LVLM模型。更高分辨率可以提升细粒度的文字识别、文档问答和检测框标注。
+
+* InternVL/1.5/2.0
+  * 地址：https://github.com/OpenGVLab/InternVL
+    ![](https://img.shields.io/github/stars/OpenGVLab/InternVL.svg)
+  * 简介：开源多模态大模型，也是国内首个在MMMU（多学科问答）上突破60的模型。数学基准MathVista的测试中、书生·万象的得分为66.3%，显著高于其他闭源商业模型和开源模型。在通用图表基准ChartQA、文档类基准DocVQA、信息图表类基准InfographicVQA中以及通用视觉问答基准MMBench (v1.1)中，书生万象也取得了最先进（SOTA）的表现。
 
 ### 2. <a name='应用'></a>应用
 
