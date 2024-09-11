@@ -306,12 +306,6 @@
     ![](https://img.shields.io/github/stars/THUDM/VisualGLM-6B.svg)
   * 简介：一个强大的开源视觉语言模型（VLM）。CogVLM-17B 拥有 100 亿视觉参数和 70 亿语言参数。 CogVLM-17B 在 10 个经典跨模态基准测试上取得了 SOTA 性能。CogVLM 能够准确地描述图像，几乎不会出现幻觉。
 
-* VisCPM
-  
-  * 地址：https://github.com/OpenBMB/VisCPM
-    ![](https://img.shields.io/github/stars/OpenBMB/VisCPM.svg)
-  * 简介：一个开源的多模态大模型系列，支持中英双语的多模态对话能力（VisCPM-Chat模型）和文到图生成能力（VisCPM-Paint模型）。VisCPM基于百亿参数量语言大模型CPM-Bee（10B）训练，融合视觉编码器（Q-Former）和视觉解码器（Diffusion-UNet）以支持视觉信号的输入和输出。得益于CPM-Bee基座优秀的双语能力，VisCPM可以仅通过英文多模态数据预训练，泛化实现优秀的中文多模态能力。
-
 * Visual-Chinese-LLaMA-Alpaca
   
   * 地址：https://github.com/airaria/Visual-Chinese-LLaMA-Alpaca
@@ -323,6 +317,18 @@
   * 地址：https://github.com/LinkSoul-AI/LLaSM
     ![](https://img.shields.io/github/stars/LinkSoul-AI/LLaSM.svg)
   * 简介：第一个支持中英文双语语音-文本多模态对话的开源可商用对话模型。便捷的语音输入将大幅改善以文本为输入的大模型的使用体验，同时避免了基于 ASR 解决方案的繁琐流程以及可能引入的错误。目前开源了LLaSM-Chinese-Llama-2-7B、LLaSM-Baichuan-7B等模型与数据集。
+
+* VisCPM
+  
+  * 地址：https://github.com/OpenBMB/VisCPM
+    ![](https://img.shields.io/github/stars/OpenBMB/VisCPM.svg)
+  * 简介：一个开源的多模态大模型系列，支持中英双语的多模态对话能力（VisCPM-Chat模型）和文到图生成能力（VisCPM-Paint模型）。VisCPM基于百亿参数量语言大模型CPM-Bee（10B）训练，融合视觉编码器（Q-Former）和视觉解码器（Diffusion-UNet）以支持视觉信号的输入和输出。得益于CPM-Bee基座优秀的双语能力，VisCPM可以仅通过英文多模态数据预训练，泛化实现优秀的中文多模态能力。
+
+* MiniCPM-V
+  
+  * 地址：https://github.com/OpenBMB/MiniCPM-V
+    ![](https://img.shields.io/github/stars/OpenBMB/MiniCPM-V.svg)
+  * 简介：面向图文理解的端侧多模态大模型系列。包括MiniCPM-V 2/2.6等系列，参数量包括2B，8B等，2B多模态综合性能超越 Yi-VL 34B、CogVLM-Chat 17B、Qwen-VL-Chat 10B 等更大参数规模的模型， 8B，单图、多图和视频理解性能超越了 GPT-4V。
 
 * Qwen-VL
   
