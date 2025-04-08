@@ -994,6 +994,12 @@
     ![](https://img.shields.io/github/stars/bentoml/OpenLLM.svg)
   * 简介：支持将要部署的LLM连接多个适配器，可以实现只使用一个底座模型来执行多个特定的任务；支持量化推理和LangChain集成。但对批处理和分布式推理的支持相对不友好。
 
+* MNN LLM
+
+  * 地址：https://github.com/alibaba/MNN
+    ![](https://github.com/alibaba/MNN.svg)
+  * 简介：主要支持不同端侧设备上高效推理，包括移动设备（iOS或Android设备）、PC设备等的高效推理。支持CPU/GPU加速，支持加载多个Lora模型。使用教程：https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html
+
 * MLC LLM
   
   * 地址：https://github.com/mlc-ai/mlc-llm
