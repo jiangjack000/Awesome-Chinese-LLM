@@ -291,6 +291,10 @@
   * 地址：https://github.com/Langboat/Mengzi3
     ![](https://img.shields.io/github/stars/Langboat/Mengzi3.svg)
   * 简介：Mengzi3 8B/13B模型基于Llama架构，语料精选自网页、百科、社交、媒体、新闻，以及高质量的开源数据集。通过在万亿tokens上进行多语言语料的继续训练，模型的中文能力突出并且兼顾多语言能力。
+* YuLan-Mini
+  * 地址：https://github.com/RUC-GSAI/YuLan-Mini
+    ![](https://img.shields.io/github/stars/RUC-GSAI/YuLan-Mini.svg)
+  * 简介：YuLan-Mini 2.4B是一个全开源、可商用、高性能的大模型，拥有 28K 上下文长度，主要擅长数学、代码、中文、英文等，仅使用预训练 1/18 的数据量达到 Qwen2.5-1.5B 相似水平。
 
 #### 1.2 多模态LLM模型
 
