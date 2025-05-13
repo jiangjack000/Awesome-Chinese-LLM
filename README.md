@@ -95,10 +95,10 @@
   * 地址：https://github.com/THUDM/GLM-4
     ![](https://img.shields.io/github/stars/THUDM/GLM-4.svg)
   * 简介：GLM-4-9B 是智谱 AI 推出的最新一代预训练模型 GLM-4 系列中的开源版本。 在语义、数学、推理、代码和知识等多方面的数据集测评中， **GLM-4-9B** 及其人类偏好对齐的版本 **GLM-4-9B-Chat** 均表现出超越 Llama-3-8B 的卓越性能。除了能进行多轮对话，GLM-4-9B-Chat 还具备网页浏览、代码执行、自定义工具调用（Function Call）和长文本推理（支持最大 128K 上下文）等高级功能。本代模型增加了多语言支持，支持包括日语，韩语，德语在内的 26 种语言。我们还推出了支持 1M 上下文长度（约 200 万中文字符）的 **GLM-4-9B-Chat-1M** 模型和基于 GLM-4-9B 的多模态模型 GLM-4V-9B。**GLM-4V-9B** 具备 1120 * 1120 高分辨率下的中英双语多轮对话能力，在中英文综合能力、感知推理、文字识别、图表理解等多方面多模态评测中，GLM-4V-9B 表现出超越 GPT-4-turbo-2024-04-09、Gemini 1.0 Pro、Qwen-VL-Max 和 Claude 3 Opus 的卓越性能。
-* Qwen/Qwen1.5/Qwen2/Qwen2.5
+* Qwen/Qwen1.5/Qwen2/Qwen2.5/Qwen-3
   * 地址：https://github.com/QwenLM
     ![](https://img.shields.io/github/stars/QwenLM/Qwen.svg)
-  * 简介：通义千问 是阿里云研发的通义千问大模型系列模型，包括参数规模为18亿（1.8B）、70亿（7B）、140亿（14B）、720亿（72B）和1100亿（110B）。各个规模的模型包括基础模型Qwen，以及对话模型。数据集包括文本和代码等多种数据类型，覆盖通用领域和专业领域，能支持8~32K的上下文长度，针对插件调用相关的对齐数据做了特定优化，当前模型能有效调用插件以及升级为Agent。
+  * 简介：通义千问是阿里云研发的通义千问大模型系列。其中，Qwen-3是阿里云通义实验室推出的Qwen系列最新一代通用大模型的开源版本，涵盖了多种不同参数规模的模型，包括1.7亿（1.7B）、4亿（4B）、8亿（8B）、14亿（14B）、32亿（32B）、300亿（30B）和2350亿（235B）等版本。这些模型均包含基础模型Qwen和对话模型，适用于多种应用场景。其数据集包含文本、代码等多种类型，覆盖通用领域和专业领域，支持32K的上下文长度，并针对插件调用相关对齐数据进行了特定优化。当前模型能够有效调用插件并升级为Agent，支持MCP调用。
 * InternLM
   * 地址：https://github.com/InternLM/InternLM-techreport
     ![](https://img.shields.io/github/stars/InternLM/InternLM-techreport.svg)
@@ -295,6 +295,8 @@
   * 地址：https://github.com/RUC-GSAI/YuLan-Mini
     ![](https://img.shields.io/github/stars/RUC-GSAI/YuLan-Mini.svg)
   * 简介：YuLan-Mini 2.4B是一个全开源、可商用、高性能的大模型，拥有 28K 上下文长度，主要擅长数学、代码、中文、英文等，仅使用预训练 1/18 的数据量达到 Qwen2.5-1.5B 相似水平。
+
+
 
 #### 1.2 多模态LLM模型
 
@@ -823,6 +825,11 @@
   * 地址：https://huggingface.co/datasets/BelleGroup/generated_chat_0.4M
   * 数据集说明：包含约40万条由BELLE项目生成的个性化角色对话数据，包含角色介绍。但此数据集是由ChatGPT产生的，未经过严格校验，题目或解题过程可能包含错误。
 
+
+* Chinese-DeepSeek-R1-Distill-data-110k：
+  
+  * 地址：https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k
+  * 数据集说明：包含约11万个中文对话样本，通过蒸馏满血版DeepSeek-R1得到，数据集中不仅包含math数据，还包括大量的通用类型数据，总数量为110K。具体来说，Math：共计36568个样本，Exam：共计2432个样本，STEM：共计12648个样本，General：共计58352，包含弱智吧、逻辑推理、小红书、知乎、Chat等。
 * alpaca_chinese_dataset：
   
   * 地址：https://github.com/hikariming/alpaca_chinese_dataset
